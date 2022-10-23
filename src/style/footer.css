@@ -1,0 +1,19 @@
+.container-footer{
+    width: 100%;
+    display: flex;
+    background-color: #0B0D17;
+    color: white;
+    height: 60px;
+    justify-content: space-evenly;
+}
+.container-enlaces, .left{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    line-height: 5;
+}
+.container-enlaces > li > a > i{
+    color: white;
+    font-size: 30px;
+    display: inline-block;
+}

@@ -1,0 +1,103 @@
+:root{
+    --colorTextoMe: black;
+    --colorFondoMe: #D5FAFC;
+    --colorPurpure: #8c30f5c4;
+    --colorCianMe:#2EC5CE;
+    --colorFondoCardMe:white;
+}
+
+.abautme-container{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--colorFondoMe);
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+    padding:0 15% 0 15%;
+    gap: 5rem;
+    color: var(--colorTexto);
+}
+.abautme-container>:nth-child(1){
+    width: 100%;
+    margin-top: 10px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.abautme-card> .title-card > span{
+    line-height: 1;
+    position: relative;
+    font-size: 120px;
+    color: var(--colorPurpureMe);
+    font-family:serif ;
+        
+}
+
+p{
+    font-weight: bold;
+    text-align: left;
+    padding-top: 20px;
+}
+
+.abautme-container>:nth-child(2){
+    margin-top: 70px;
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 4;
+
+}
+.abautme-container>:nth-child(3){
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    margin-top: 20px;
+}
+.abautme-container>:nth-child(4){
+    max-width: 300px;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    margin-top: 50px;
+    grid-row-end: 6;
+}
+.fa-graduation-cap, .fa-laptop-code, .fa-cloud{
+    font-size: 60px;
+    color: var(--colorPurpureMe);
+    padding-left: 20px;
+    display: inline;
+}
+h2{float: left;}
+
+.img-azure, .img-heroku{
+    background-image: url('../img/Azure.png');
+    width: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 20px;
+    position: relative;
+    top: 5px;
+    left: -7px;
+}
+
+.img-heroku{
+    left: -2px;
+    background-image: url('../img/heroku.png');
+}
+
+
+.abautme-card{
+    padding: 0 0 30px 20px;
+    width: fit-content;
+    height: fit-content;
+    min-height: 150px;
+    min-width: 200px;
+    background-color: var(--colorFondoCardMe);
+    border-radius: 20px;
+    text-align: left;
+}
+
